@@ -8,6 +8,8 @@ RUN apt-get -y update && \
 
 EXPOSE 20150
 
+VOLUME /cockroach-exports
+
 COPY nginx.conf /etc/nginx/nginx.conf
 
 CMD ["nginx", "-g", "daemon off;"]
