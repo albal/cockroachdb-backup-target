@@ -9,3 +9,5 @@ RUN apt-get -y update && \
 EXPOSE 20150
 
 COPY nginx.conf /etc/nginx/nginx.conf
+
+CMD ["nginx", "-g", "daemon off;"]
